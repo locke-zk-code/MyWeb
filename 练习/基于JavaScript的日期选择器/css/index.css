@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: 13px Helvetica Neue, Helvetica, PingFang SC, Tahoma, Arial, sans-serif;
+}
+
+body {
+    background-color: pink;
+}
+
+/* **************************** INPUT **************************** */
+.input {
+    width: 250px;
+    height: 30px;
+    margin: 40px auto;
+    font-size: 0;
+}
+
+label {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #666;
+}
+
+#myInput {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #666;
+    box-sizing: border-box;
+}
+
+/* **************************** LOCKE DATE **************************** */
+.locke-date {
+    position: relative;
+    width: 275px;
+    height: 320px;
+    background-color: #fff;
+    margin: 40px auto;
+    user-select: none;
+}
+
+/* **************************** MASTER 头部 **************************** */
+.locke-d-master-head {
+    width: 100%;
+    height: 45px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.locke-d-m-h-inner {
+    width: 100%;
+    height: 28px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.locke-d-m-h-inner>button {
+    width: 28px;
+    height: 100%;
+    border-width: 0;
+    color: #666;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.locke-d-m-h-inner>button:hover {
+    color: #5fb878 !important;
+}
+
+.locke-d-m-h-i-button-1,
+.locke-d-m-h-i-button-2 {
+    float: left;
+}
+
+.locke-d-m-h-i-button-3,
+.locke-d-m-h-i-button-4 {
+    float: right;
+}
+
+.locke-d-m-h-i-box {
+    width: 95px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.locke-d-m-h-i-box>span {
+    display: block;
+    height: 100%;
+    line-height: 28px;
+    text-align: center;
+    color: #666;
+    cursor: pointer;
+}
+
+.locke-d-m-h-i-b-year {
+    float: left;
+    width: 50px;
+}
+
+.locke-d-m-h-i-b-month {
+    float: right;
+    width: 35px;
+}
+
+.locke-d-m-h-i-box>i {
+    display: inline-block;
+    width: 10px;
+    height: 1px;
+    margin-top: 13px;
+    background-color: #666;
+}
+
+.locke-d-m-h-i-box:hover span {
+    color: #5fb878 !important;
+}
+
+.locke-d-m-h-i-box:hover i {
+    background-color: #5fb878 !important;
+}
+
+/* **************************** MASTER 躯干 **************************** */
+.locke-d-master-body {
+    width: 100%;
+    height: 230px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.locke-d-master-body>ul {
+    width: 100%;
+    height: 100%;
+}
+
+.locke-d-master-body>ul>li {
+    float: left;
+    list-style: none;
+    width: 35px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #666;
+}
+
+.locke-d-m-b-li-head {
+    font-weight: 700;
+}
+
+.locke-d-m-b-li-default {
+    cursor: pointer;
+}
+
+.locke-d-m-b-li-default:hover:not(.locke-d-m-b-li-show) {
+    color: #333 !important;
+    background-color: #e2e2e2 !important;
+}
+
+.locke-d-m-b-li-prer,
+.locke-d-m-b-li-next {
+    color: #d2d2d2 !important;
+}
+
+.locke-d-m-b-li-show {
+    color: #fff !important;
+    background-color: #009688 !important;
+}
+
+/* **************************** MASTER 底部 **************************** */
+.locke-d-master-foot {
+    width: 100%;
+    height: 45px;
+}
+
+.locke-d-m-f-inner {
+    float: right;
+    width: 138px;
+    height: 28px;
+    margin: 10px 15px 0 0;
+    font-size: 0;
+}
+
+.locke-d-m-f-inner>button {
+    width: 46px;
+    height: 100%;
+    line-height: 28px;
+    text-align: center;
+    color: #666;
+    cursor: pointer;
+    outline: none;
+    border-width: 0;
+    background-color: transparent;
+}
+
+.locke-d-m-f-inner>button:hover {
+    color: #5fb878 !important;
+}
+
+.locke-d-m-f-i-button-1,
+.locke-d-m-f-i-button-3 {
+    border: 1px solid #e2e2e2 !important;
+}
+
+.locke-d-m-f-i-button-2 {
+    border-top: 1px solid #e2e2e2 !important;
+    border-bottom: 1px solid #e2e2e2 !important;
+}
+
+/* **************************** 年份选择器 **************************** */
+.locke-year {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 275px;
+    background-color: #fff;
+}
+
+/* **************************** SLAVE-头部 **************************** */
+.locke-y-slave-head {
+    width: 100%;
+    height: 45px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.locke-y-s-h-inner {
+    width: 100%;
+    height: 28px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.locke-y-s-h-inner>button {
+    width: 28px;
+    height: 100%;
+    border-width: 0;
+    background-color: transparent;
+    color: #666;
+    cursor: pointer;
+    outline: none;
+}
+
+.locke-y-s-h-inner>button:hover {
+    color: #5fb878 !important;
+}
+
+.locke-y-s-h-i-button-1 {
+    float: left;
+}
+
+.locke-y-s-h-i-button-2 {
+    float: right;
+}
+
+.locke-y-s-h-i-box {
+    width: 110px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.locke-y-s-h-i-box>span {
+    display: block;
+    width: 50px;
+    height: 100%;
+    line-height: 28px;
+    text-align: center;
+    color: #666;
+    cursor: pointer;
+}
+
+.locke-y-s-h-i-b-start {
+    float: left;
+}
+
+.locke-y-s-h-i-b-end {
+    float: right;
+}
+
+.locke-y-s-h-i-box>i {
+    display: inline-block;
+    width: 10px;
+    height: 1px;
+    margin-top: 13px;
+    background-color: #666;
+}
+
+.locke-y-s-h-i-box:hover span {
+    color: #5fb878 !important;
+}
+
+.locke-y-s-h-i-box:hover i {
+    background-color: #5fb878 !important;
+}
+
+/* **************************** SLAVE-躯干 **************************** */
+.locke-y-slave-body {
+    width: 100%;
+    height: 230px;
+    padding: 10px 15px;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    box-sizing: border-box;
+}
+
+.locke-y-slave-body>ul {
+    width: 100%;
+    height: 100%;
+}
+
+.locke-y-slave-body>ul>li {
+    float: left;
+    width: 81.6px;
+    height: 41.6px;
+    line-height: 41.6px;
+    text-align: center;
+    color: #666;
+    cursor: pointer;
+    list-style: none;
+}
+
+.locke-y-slave-body>ul>li:hover:not(.locke-y-s-b-show) {
+    color: #333 !important;
+    background-color: #e2e2e2;
+}
+
+.locke-y-s-b-show {
+    color: #fff !important;
+    background-color: #009688 !important;
+}
+
+/* **************************** 月份选择器 **************************** */
+.locke-month {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 275px;
+    background-color: #fff;
+}
+
+/* **************************** SLAVE-头部 **************************** */
+.locke-m-slave-head {
+    width: 100%;
+    height: 45px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.locke-m-s-h-inner {
+    width: 100%;
+    height: 28px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.locke-m-s-h-inner>button {
+    width: 28px;
+    height: 100%;
+    border-width: 0;
+    background-color: transparent;
+    color: #666;
+    cursor: pointer;
+    outline: none;
+}
+
+.locke-m-s-h-inner>button:hover {
+    color: #5fb878 !important;
+}
+
+.locke-m-s-h-i-button-1 {
+    float: left;
+}
+
+.locke-m-s-h-i-button-2 {
+    float: right;
+}
+
+.locke-m-s-h-i-year {
+    display: block;
+    width: 50px;
+    height: 100%;
+    line-height: 28px;
+    text-align: center;
+    color: #666;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.locke-m-s-h-i-year:hover {
+    color: #5fb878 !important;
+}
+
+/* **************************** SLAVE-躯干 **************************** */
+.locke-m-slave-body {
+    width: 100%;
+    height: 230px;
+    padding: 10px 15px;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    box-sizing: border-box;
+}
+
+.locke-m-slave-body>ul {
+    width: 100%;
+    height: 100%;
+}
+
+.locke-m-slave-body>ul>li {
+    float: left;
+    width: 61.25px;
+    height: 69.3px;
+    line-height: 69.3px;
+    text-align: center;
+    color: #666;
+    cursor: pointer;
+    list-style: none;
+}
+
+.locke-m-slave-body>ul>li:hover:not(.locke-m-s-b-show) {
+    color: #333 !important;
+    background-color: #e2e2e2 !important;
+}
+
+.locke-m-s-b-show {
+    color: #fff !important;
+    background-color: #009688 !important;
+}

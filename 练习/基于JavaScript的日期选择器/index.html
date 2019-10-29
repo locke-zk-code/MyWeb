@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js" defer></script>
+</head>
+<body>
+    <!-- 输入框 -->
+    <div class="input">
+        <label for="myInput">日期</label>
+        <input type="text" id="myInput">
+    </div>
+    <!-- 日期选择控件 -->
+    <div class="locke-date">
+        <!-- MASTER-头部 -->
+        <div class="locke-d-master-head">
+            <div class="locke-d-m-h-inner">
+                <button class="locke-d-m-h-i-button-1">&lt;&lt;</button>
+                <button class="locke-d-m-h-i-button-2">&lt;</button>
+                <button class="locke-d-m-h-i-button-4">&gt;&gt;</button>
+                <button class="locke-d-m-h-i-button-3">&gt;</button>
+                <div class="locke-d-m-h-i-box">
+                    <span class="locke-d-m-h-i-b-year"></span>
+                    <span class="locke-d-m-h-i-b-month"></span>
+                    <i></i>
+                </div>
+            </div>
+        </div>
+        <!-- MASTER-躯干 -->
+        <div class="locke-d-master-body">
+            <ul>
+                <li class="locke-d-m-b-li-head">日</li>
+                <li class="locke-d-m-b-li-head">一</li>
+                <li class="locke-d-m-b-li-head">二</li>
+                <li class="locke-d-m-b-li-head">三</li>
+                <li class="locke-d-m-b-li-head">四</li>
+                <li class="locke-d-m-b-li-head">五</li>
+                <li class="locke-d-m-b-li-head">六</li>
+                <li class="locke-d-m-b-li-default locke-d-m-b-li-show"></li>
+                <li class="locke-d-m-b-li-default locke-d-m-b-li-prer"></li>
+                <li class="locke-d-m-b-li-default locke-d-m-b-li-next"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+                <li class="locke-d-m-b-li-default"></li>
+            </ul>
+        </div>
+        <!-- MASTER-底部 -->
+        <div class="locke-d-master-foot">
+            <div class="locke-d-m-f-inner">
+                <button class="locke-d-m-f-i-button-1">清空</button>
+                <button class="locke-d-m-f-i-button-2">现在</button>
+                <button class="locke-d-m-f-i-button-3">确定</button>
+            </div>
+        </div>
+        <!-- 年份选择器 -->
+        <div class="locke-year" style="display: none;">
+            <!-- SLAVE-头部 -->
+            <div class="locke-y-slave-head">
+                <div class="locke-y-s-h-inner">
+                    <button class="locke-y-s-h-i-button-1">&lt;&lt;</button>
+                    <button class="locke-y-s-h-i-button-2">&gt;&gt;</button>
+                    <div class="locke-y-s-h-i-box">
+                        <span class="locke-y-s-h-i-b-start"></span>
+                        <span class="locke-y-s-h-i-b-end"></span>
+                        <i></i>
+                    </div>
+                </div>
+            </div>
+            <!-- SLAVE-躯干 -->
+            <div class="locke-y-slave-body">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li class="locke-y-s-b-show"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 月份选择器 -->
+        <div class="locke-month" style="display: none;">
+            <!-- SLAVE-头部 -->
+            <div class="locke-m-slave-head">
+                <div class="locke-m-s-h-inner">
+                    <button class="locke-m-s-h-i-button-1">&lt;&lt;</button>
+                    <button class="locke-m-s-h-i-button-2">&gt;&gt;</button>
+                    <span class="locke-m-s-h-i-year"></span>
+                </div>
+            </div>
+            <!-- SLAVE-躯干 -->
+            <div class="locke-m-slave-body">
+                <ul>
+                    <li data-month="1">一月</li>
+                    <li data-month="2">二月</li>
+                    <li data-month="3">三月</li>
+                    <li data-month="4">四月</li>
+                    <li data-month="5">五月</li>
+                    <li data-month="6">六月</li>
+                    <li data-month="7">七月</li>
+                    <li data-month="8">八月</li>
+                    <li data-month="9">九月</li>
+                    <li data-month="10">十月</li>
+                    <li data-month="11">十一月</li>
+                    <li data-month="12">十二月</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
